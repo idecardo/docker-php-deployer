@@ -3,7 +3,7 @@ ARG PHP_VERSION=8.0
 FROM php:$PHP_VERSION-alpine
 
 RUN apk add --update --no-cache \
-    bash openssh-client rsync
+    bash npm openssh-client rsync
 
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 
